@@ -10,4 +10,6 @@ class House:
 
 h1 = House()
 print("House h1 has: ")
+
+h1.door = 7 #update
 h1.view()
