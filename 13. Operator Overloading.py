@@ -6,8 +6,18 @@ class House:
     def view(self):
         print("The house has", self.window, "window and", self.door, "door")
 
-h1 = House(6, 2)
-h2 = House(4, 1)
+    def __add__(self, other):
+        new_windows = self.windows + other.windows
+        new_doors = self.doors + other.doors  #return "new house has "+str(new_windows)+" windows and "+str(new_doors)+" doors"
+        obj = House(new_windows,new_doors)
+        return obj
 
-h1.view()
-h2.view()
+
+h1 = House(6,3)
+h2 = House(8,2)
+h1.views()
+h2.views()
+h3 = h1 +h2
+h3.views()
+
+#print(h1 + h2)
