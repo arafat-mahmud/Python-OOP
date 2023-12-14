@@ -20,7 +20,7 @@ class my_calculator:
 
     @dispatch(str, int)
     def product(self, a, b):
-        print(int(a)*b)
+        print(int(a) * b)
 
 c1 = my_calculator()
 c1.product("4", 5)
